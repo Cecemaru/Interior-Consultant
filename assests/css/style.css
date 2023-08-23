@@ -1,0 +1,23 @@
+/* Gooogle Font  */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: bisque;
+}
+
+.material-symbols-outlined.md-48 {
+  font-size: 38px;
+}
+
+header h1 {
+  font-family: "Crimson Pro", serif;
+}
+
+.material-symbols-outlined.md-38 {
+  font-size: 38px;
+}
+
+main section article h2 {
+  font-family: "Lora", serif;
+}

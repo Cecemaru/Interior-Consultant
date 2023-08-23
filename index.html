@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="assests/image/devchallenges.png" />
+
+    <link rel="stylesheet" href="assests/css/style.css" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
+    />
+    <title>Devchallenges</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="px-3">
+    <header class="mt-4">
+      <div class="flex justify-between">
+        <div class="border-2 border-black p-2">
+          <h1 class="uppercase font-extralight text-sm">This Interior</h1>
+        </div>
+
+        <nav class="hidden">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <span class="material-symbols-outlined md-38"> menu </span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <article class="grid gap-6 my-9">
+          <h2 class="text-4xl font-medium">Modern interior</h2>
+          <p class="text-sm font-normal">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+
+          <button class="inline-flex gap-3 items-center m-0">
+            <p class="font-bold text-sm">Read more</p>
+            <span class="material-symbols-outlined"> trending_flat </span>
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
