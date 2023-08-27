@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/Cecemaru/My-team-page/blob/master/assests/image/Interior-Consultant-index-html.png)
+![screenshot](https://github.com/Cecemaru/Interior-Consultant/blob/master/assests/image/Interior-Consultant-index-html.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
