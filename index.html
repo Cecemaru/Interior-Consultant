@@ -18,62 +18,114 @@
       href="https://devchallenges.io/"
     />
 
+    <title>Devchallenges</title>
+
+    <script src="tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
     />
-    <title>Devchallenges</title>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
   </head>
-  <body class="px-3">
+  <body
+    class="h-screen px-3 flex flex-col lg:justify-between max-w-screen-2xl mx-auto lg:px-20"
+  >
     <header class="mt-4">
       <div class="flex justify-between">
-        <div class="border-2 border-black p-2">
-          <h1 class="uppercase font-extralight text-sm">This Interior</h1>
+        <div class="border-2 border-white p-2">
+          <h1 class="uppercase font-extralight text-sm select-none">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >This Interior</a
+            >
+          </h1>
         </div>
 
-        <nav class="hidden">
-          <ul>
-            <li><a href="#">Home</a></li>
+        <nav
+          class="md:flex md:items-center fixed w-full h-full bg-[#181719] z-10 left-full duration-500"
+          id="nav-menu"
+        >
+          <ul
+            class="absolute md:flex md:gap-20 text-lg flex justify-center flex-col items-center gap-8 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
+          >
+            <li>
+              <a href="#" class="active">Home</a>
+            </li>
             <li><a href="#">Collection</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+          <span
+            class="material-symbols-outlined absolute right-5 top-1 cursor-pointer md-38 select-none"
+            id="nav-close"
+          >
+            close
+          </span>
         </nav>
 
-        <span class="material-symbols-outlined md-38"> menu </span>
+        <span
+          class="material-symbols-outlined md-38 md:hidden cursor-pointer select-none"
+          id="nav-toggle"
+        >
+          menu
+        </span>
       </div>
     </header>
 
     <main>
-      <section>
-        <article class="grid gap-6 my-9">
-          <h2 class="text-4xl font-medium">Modern interior</h2>
-          <p class="text-sm font-normal">
-            A full-Service residential & commercial interior design and staging
-            company offering professional organizing & eco-services.
+      <section class="lg:flex md:justify-between md:items-center">
+        <article class="my-9">
+          <h2 class="text-4xl font-medium lg:text-5xl">Modern interior</h2>
+          <p class="text-sm font-normal my-6 lg:text-2xl lg:my-12">
+            A full-Service residential & <br />
+            commercial interior design and<br />
+            staging company offering<br />
+            professional organizing &<br />
+            eco-services.
           </p>
 
           <button class="inline-flex gap-3 items-center m-0">
-            <p class="font-bold text-sm">Read more</p>
+            <p class="font-bold text-sm md:text-lgwww">Read more</p>
             <span class="material-symbols-outlined"> trending_flat </span>
           </button>
         </article>
+
+        <div class="relative">
+          <img
+            src="assests/image/photo1.png"
+            alt="interior design"
+            class="w-auto md:max-w-3xl"
+          />
+          <div
+            class="user-card absolute bg-[#181719] -translate-y-1/3 right-6 px-5 pb-6 pr-24 lg:-translate-y-1/2"
+          >
+            <div class="flex py-3 gap-4">
+              <img
+                src="assests/image/photo2.png"
+                alt="user profile"
+                class="w-9 rounded-full h-9 lg:w-14 lg:h-14"
+              />
+              <div class="flex flex-col justify-center">
+                <h4 class="text-xs md:text-sm">Aliza Webber</h4>
+                <span class="text-xs text-gray-500 md:text-sm"
+                  >Interior designer</span
+                >
+              </div>
+            </div>
+            <h3 class="text-lg font-bold lora md:text-2xl">
+              Designed in 2020 by
+            </h3>
+            <h4 class="text-lg font-bold lora md:text-2xl">Aliza Webber</h4>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer
+      class="absolute bottom-0 left-2/4 -translate-x-2/4 text-center lg:relative text-[#A9A9A9] font-bold"
+    >
+      created by Cecemaru - devChallenges.io
+    </footer>
+    <script src="assests/js/app.js"></script>
   </body>
 </html>
