@@ -27,6 +27,18 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
     />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              smx: { max: "768px" },
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body
     class="h-screen px-3 flex flex-col lg:justify-between max-w-screen-2xl mx-auto lg:px-20"
@@ -42,11 +54,11 @@
         </div>
 
         <nav
-          class="md:flex md:items-center fixed w-full h-full bg-[#181719] z-10 left-full duration-500"
+          class="md:flex md:items-center smx:fixed smx:w-full smx:h-full smx:bg-[#181719] z-10 left-full duration-500"
           id="nav-menu"
         >
           <ul
-            class="absolute md:flex md:gap-20 text-lg flex justify-center flex-col items-center gap-8 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
+            class="smx:absolute md:flex md:gap-20 text-lg flex justify-center smx:flex-col items-center gap-8 smx:top-2/4 smx:left-2/4 smx:-translate-x-2/4 smx:-translate-y-2/4"
           >
             <li>
               <a href="#" class="active">Home</a>
@@ -56,7 +68,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
           <span
-            class="material-symbols-outlined absolute right-5 top-1 cursor-pointer md-38 select-none"
+            class="material-symbols-outlined hidden smx:block absolute right-5 top-1 cursor-pointer md-38 select-none"
             id="nav-close"
           >
             close
